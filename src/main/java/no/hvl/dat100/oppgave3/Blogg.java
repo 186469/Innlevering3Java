@@ -63,7 +63,7 @@ public class Blogg {
 		
 		String str = nesteledig + "\n";
 		for (int i = 0; i < nesteledig; i++) {
-			str += innleggstabell[i].toString();
+			str += innleggstabell[i].toString() + "\n";
 		}
 		return str;
 	}

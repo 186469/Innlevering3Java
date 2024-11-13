@@ -61,11 +61,12 @@ public class Blogg {
 	
 	public String toString() {
 		
-		String str = nesteledig + "\n";
+		StringBuilder sb = new StringBuilder(nesteledig);
+		sb.append(nesteledig).append("\n");
 		for (int i = 0; i < nesteledig; i++) {
-			str += innleggstabell[i].toString() + "\n";
+			sb.append(innleggstabell[i].toString()).append("\n");
 		}
-		return str;
+		return sb.toString();
 	}
 
 	// valgfrie oppgaver nedenfor

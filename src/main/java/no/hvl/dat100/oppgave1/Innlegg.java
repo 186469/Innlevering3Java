@@ -79,8 +79,6 @@ public abstract class Innlegg {
 	@Override
 	public String toString() {
 		
-//		String resultat = "ID: " + id + "\n" + "Bruker: " + bruker + "\n" + 
-//		"Dato: " + dato + "\n" + "Likes: " + likes;
 		String resultat = id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
 		return resultat;
 				

@@ -12,7 +12,7 @@ public class Bilde extends Tekst {
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		super(id, bruker, dato, likes, url);
+		super(id, bruker, dato, likes, tekst);
 		this.url = url;
 	}
 	
@@ -27,7 +27,7 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-		String resultat = "BILDE\n" + super.toString() + "\n" + url;
+		String resultat = "BILDE\n" + super.toString() + url + "\n";
 		return resultat;
 	}
 

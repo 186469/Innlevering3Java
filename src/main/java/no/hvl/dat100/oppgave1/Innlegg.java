@@ -10,7 +10,10 @@ public abstract class Innlegg {
 	protected int likes;
 	
 	public Innlegg() {
-		
+		this.id = 0;
+		this.bruker = "";
+		this.dato = "";
+		this.likes = 0;
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
@@ -86,7 +89,7 @@ public abstract class Innlegg {
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return "<div>\n" + "<h2>" + bruker + "</h2>\n"  + "<p>" + dato + "</p>\n" + "<p>" + likes + "</p>\n" + "</div>\n";
 				
 	}
 }

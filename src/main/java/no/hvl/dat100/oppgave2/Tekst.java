@@ -8,7 +8,8 @@ public class Tekst extends Innlegg {
 	private String tekst;
 	
 	public Tekst () {
-		
+		super();
+		this.tekst = "";
 	}
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
@@ -40,7 +41,7 @@ public class Tekst extends Innlegg {
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 			
-		throw new UnsupportedOperationException(TODO.method());
+		return super.toHTML() + "<p>" + tekst + "</p>\n";
 				
 	}
 }
